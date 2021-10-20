@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// components
+import ChargersForm from "./pages/ChargersForm";
+// styled components
+import {StyledMainContent, StyledMainWrapper} from "./styled/layout";
 
+/**
+ * Entry point component
+ * @return {JSX.Element}
+ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledMainWrapper>
+      <StyledMainContent id="main">
+        <ChargersForm/>
+      </StyledMainContent>
+    </StyledMainWrapper>
   );
 }
 
